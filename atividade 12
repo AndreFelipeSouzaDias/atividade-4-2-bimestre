@@ -1,0 +1,22 @@
+programa
+{
+    funcao inicio()
+    {
+        real num, maior
+        inteiro i
+
+        escreva("Digite o número 1: ")
+        leia(num)
+        maior = num
+
+        para (i = 2; i <= 5; i = i + 1) {
+            escreva("Digite o número ", i, ": ")
+            leia(num)
+            se (num > maior) {
+                maior = num
+            }
+        }
+
+        escreva("O maior número digitado foi: ", maior, "\n")
+    }
+}
