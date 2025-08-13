@@ -1,0 +1,14 @@
+programa
+{
+    funcao inicio()
+    {
+        inteiro i = 20
+
+        enquanto (i >= 1)
+        {
+            escreva(i, " ")
+            i = i - 1
+        }
+        escreva("\n")
+    }
+}
