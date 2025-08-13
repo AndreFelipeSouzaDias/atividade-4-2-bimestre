@@ -1,0 +1,22 @@
+programa
+{
+    funcao inicio()
+    {
+        inteiro N, i
+
+        escreva("Digite um número N: ")
+        leia(N)
+
+        para (i = 1; i <= N; i++)
+        {
+            escreva(i, " ")
+        }
+        escreva("\n\n\n") 
+
+        para (i = N; i >= 1; i--)
+        {
+            escreva(i, " ")
+        }
+        escreva("\n")
+    }
+}
