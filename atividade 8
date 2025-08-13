@@ -1,0 +1,23 @@
+programa
+{
+    funcao inicio()
+    {
+        cadeia senha
+
+        enquanto (verdadeiro)
+        {
+            escreva("Digite a senha: ")
+            leia(senha)
+
+            se (senha == "12345" ou senha == "admin" ou senha == "senha" ou senha == "xuxa")
+            {
+                escreva("Senha insegura!\n")
+            }
+            senao
+            {
+                escreva("Senha aceita.\n")
+                pare
+            }
+        }
+    }
+}
