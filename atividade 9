@@ -1,0 +1,42 @@
+programa
+{
+    funcao inicio()
+    {
+        cadeia nome
+        inteiro comprimentoNome
+        inteiro idade
+        real salario
+
+        escreva("Digite o nome: ")
+        leia(nome)
+
+        comprimentoNome <- nome
+
+        enquanto (comprimentoNome <= 3)
+        {
+            escreva("Nome deve ter mais que 3 caracteres. Digite novamente: ")
+            leia(nome)
+            comprimentoNome <- nome
+        }
+
+        escreva("Digite a idade: ")
+        leia(idade)
+        enquanto (idade < 0 ou idade > 150)
+        {
+            escreva("Idade inválida! Digite uma idade entre 0 e 150: ")
+            leia(idade)
+        }
+
+        escreva("Digite o salário: ")
+        leia(salario)
+        enquanto (salario <= 0)
+        {
+            escreva("Salário inválido! Digite um valor maior que zero: ")
+            leia(salario)
+        }
+
+        escreva("Nome: ", nome, "\n")
+        escreva("Idade: ", idade, "\n")
+        escreva("Salário: R$ ", salario, "\n")
+    }
+}
