@@ -1,0 +1,50 @@
+programa
+{
+    funcao inicio()
+    {
+        inteiro N, i
+        real num, menor, maior, soma = 0
+
+        escreva("Digite a quantidade de números (N): ")
+        leia(N)
+
+        se (N <= 0) {
+            escreva("Por favor, insira um valor positivo para N.\n")
+            
+        }
+
+        faca {
+            escreva("Digite o número 1 (entre 0 e 1000): ")
+            leia(num)
+            se (num < 0 ou num > 1000) {
+                escreva("Valor inválido! Insira um número entre 0 e 1000.\n")
+            }
+        } enquanto (num < 0 ou num > 1000)
+
+        menor = num
+        maior = num
+        soma = num
+
+        para (i = 2; i <= N; i = i + 1) {
+            faca {
+                escreva("Digite o número ", i, " (entre 0 e 1000): ")
+                leia(num)
+                se (num < 0 ou num > 1000) {
+                    escreva("Valor inválido! Insira um número entre 0 e 1000.\n")
+                }
+            } enquanto (num < 0 ou num > 1000)
+
+            se (num < menor) {
+                menor = num
+            }
+            se (num > maior) {
+                maior = num
+            }
+            soma = soma + num
+        }
+
+        escreva("\nMenor valor: ", menor, "\n")
+        escreva("Maior valor: ", maior, "\n")
+        escreva("Soma dos valores: ", soma, "\n")
+    }
+}
