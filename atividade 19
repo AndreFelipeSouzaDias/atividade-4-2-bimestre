@@ -1,0 +1,40 @@
+programa
+{
+    funcao inicio()
+    {
+        inteiro N, i
+        real num, menor, maior, soma = 0
+
+        escreva("Digite a quantidade de números (N): ")
+        leia(N)
+
+        se (N <= 0) {
+            escreva("Por favor, insira um valor positivo para N.\n")
+          
+        }
+
+        escreva("Digite o número 1: ")
+        leia(num)
+        menor = num
+        maior = num
+        soma = num
+
+        para (i = 2; i <= N; i = i + 1) {
+            escreva("Digite o número ", i, ": ")
+            leia(num)
+
+            se (num < menor) {
+                menor = num
+            }
+
+            se (num > maior) {
+                maior = num
+            }
+            soma = soma + num
+        }
+
+        escreva("\nMenor valor: ", menor, "\n")
+        escreva("Maior valor: ", maior, "\n")
+        escreva("Soma dos valores: ", soma, "\n")
+    }
+}
